@@ -48,7 +48,7 @@
 			margin-bottom: 40px;
 		}
 
-		.links a {
+		a {
 			align-items: center;
 			color: #333;
 			display: inline-flex;
@@ -56,7 +56,7 @@
 			text-decoration: none;
 		}
 
-		.links a img {
+		a img {
 			height: 30px;
 			margin-right: 10px;
 		}
@@ -84,7 +84,7 @@
 		.more-bricks {
 			border-top: 1px solid #ccc;
 			margin: 0 auto;
-			max-width: 780px;
+			max-width: 1200px;
 			padding-top: 20px;
 			text-align: left;
 		}
@@ -153,37 +153,351 @@
 			</p>
 		</div>
 		<div class="links">
-			<a href="https://sandbox.crafter.fr" target="sandbox">
+			<a href="https://sandbox.crafter.fr">
 				<img src="sandbox.svg" alt="sandbox logo">
 				Play with the sandbox app
 			</a>
 		</div>
 		<div class="links">
-			<a href="https://www.npmjs.com/search?q=it.rocks" target="npmjs">
+			<a href="https://www.npmjs.com/search?q=it.rocks">
 				<img src="npm.svg" alt="npmjs logo">
-				View packages on npm
+				Browse packages on npm
 			</a>
-			<a href="https://github.com/itrocks-ts" target="github">
+			<a href="https://github.com/itrocks-ts">
 				<img src="github.svg" alt="GitHub logo">
-				View source on GitHub
+				Browse source on GitHub
 			</a>
 		</div>
 		<div class="links">
-			<a href="https://25.re/ditr" target="discord">
+			<a href="https://25.re/ditr">
 				<img src="discord.svg" alt="Discord logo" style="height:20px;">
 				Join me and the community on Discord
 			</a>
-			<a href="https://x.com/ITRocksTS" target="x">
+			<a href="https://x.com/ITRocksTS">
 				<img src="x.svg" alt="X logo" style="height:20px;">
 				Find the latest news on X.com
 			</a>
 		</div>
 
-		<div class="dependency-graph">
+		<div class="more-bricks">
 			<h2>Visit deployed bricks</h2>
-			<a href="https://www.npmjs.com/search?q=it.rocks" target="npmjs">
-			<img alt="it.rocks bricks dependency graph" src="dependency-graph.svg" width="100%"/>
-		</a>
+			<p class="info">
+				Here is the initial version of the 78 foundational bricks of the framework:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/account">account</a></span>
+					<span class="brick-desc">Business entity representing a client or user account with login credentials</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/action-bar">action-bar</a></span>
+					<span class="brick-desc">CSS for action button bars with flexible layout and basic styling</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/action-pack">action-pack</a></span>
+					<span class="brick-desc">A set of dependencies for handling actions on business objects</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/action-request">action-request</a></span>
+					<span class="brick-desc">Domain-oriented action request with path decoding, business object preloading, and action extracting</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/action">action</a></span>
+					<span class="brick-desc">An abstract class for applying actions in your framework, with @Actions and @Need decorators for assignment</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/air-datepicker">air-datepicker</a></span>
+					<span class="brick-desc">Simplifies the integration of the <a href="https://www.npmjs.com/package/air-datepicker">air-datepicker</a> component into a web page</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/app-dir">app-dir</a></span>
+					<span class="brick-desc">A Node.js library to determine the root directory of your project</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/asset-loader">asset-loader</a></span>
+					<span class="brick-desc">Dynamically loads CSS and JavaScript files from your modules and appends them to the <head></span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/auto-focus">auto-focus</a></span>
+					<span class="brick-desc">Sets focus on the first form field within a specified DOM element</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/auto-redirect">auto-redirect</a></span>
+					<span class="brick-desc">Automatically triggers a redirect by simulating a click on a DOM link</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/autocomplete">autocomplete</a></span>
+					<span class="brick-desc">Editable combobox component featuring smart autocomplete from a list of id-caption pairs for it.rocks</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/autocompleter">autocompleter</a></span>
+					<span class="brick-desc">Simplifies the integration of the <a href="https://www.npmjs.com/package/autocompleter">autocompleter</a> component into a web page</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/breadcrumb">breadcrumb</a></span>
+					<span class="brick-desc">Dynamically updates the breadcrumb based on containers with data-action 'list' or 'view'</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/build">build</a></span>
+					<span class="brick-desc">Permanently apply javascript modifiers to your dynamic DOM</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/business-pack">business-pack</a></span>
+					<span class="brick-desc">A set of dependencies for handling actions on business objects</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/class-file">class-file</a></span>
+					<span class="brick-desc">Retrieve the absolute file path of an imported class</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/class-type">class-type</a></span>
+					<span class="brick-desc">Helper types and functions to identify, validate, and manipulate classes, objects, prototypes and their properties</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/class-view">class-view</a></span>
+					<span class="brick-desc">Decorators for user-friendly identification of domain classes and objects</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/collapse">collapse</a></span>
+					<span class="brick-desc">Handles adding and removing the 'collapse' class on a .app.menu</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/collection">collection</a></span>
+					<span class="brick-desc">Identify classes containing collections of objects using decorators</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/compose">compose</a></span>
+					<span class="brick-desc">Class compositions via configuration file, enabling mixins addition and module exports replacement</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/composition">composition</a></span>
+					<span class="brick-desc">Manage and query composite and component property structures</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/config">config</a></span>
+					<span class="brick-desc">Loads and merges config.yaml files from all dependencies for unified, project-wide configuration</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/confirm">confirm</a></span>
+					<span class="brick-desc">Seamlessly adds a user confirmation step before executing an action</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/contained-auto-width">contained-auto-width</a></span>
+					<span class="brick-desc">Automatically adjusts the width of elements based on their text content within a list</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/contenteditable">contenteditable</a></span>
+					<span class="brick-desc">Respectful contenteditable: avoids &lt;div&gt;, respects white-space: pre* styles line breaks</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/core-responses">core-responses</a></span>
+					<span class="brick-desc">Prefabricated HTTP it.rocks responses for HTML, JSON, and PDF formats</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/core-transformers">core-transformers</a></span>
+					<span class="brick-desc">Prefabricated HTML and SQL data transformers for it.rocks primitives and basic types</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/crud-pack">crud-pack</a></span>
+					<span class="brick-desc">The it.rocks default CRUD pack</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/data-to-object">data-to-object</a></span>
+					<span class="brick-desc">Transforms raw string-based data into a business object with type-safe values</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/decorator">decorator</a></span>
+					<span class="brick-desc">A library that simplifies the declaration, persistence, and retrieval of decorator values</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/delete">delete</a></span>
+					<span class="brick-desc">Deletion action handling the button, user confirmation, data source deletion, and visual feedback</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/domain-components">domain-components</a></span>
+					<span class="brick-desc">Reusable business components to enrich domain entities with common attributes like active, name, and more</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/edit">edit</a></span>
+					<span class="brick-desc">Generic action-based object edit form in HTML and JSON</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/email-address">email-address</a></span>
+					<span class="brick-desc">An @EmailAddress() decorator to validate that a property contains a valid email address</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/fastify-file-session-store">fastify-file-session-store</a></span>
+					<span class="brick-desc">Simple session data persistence for Fastify using JSON files</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/fastify">fastify</a></span>
+					<span class="brick-desc">Converts Fastify requests to it.rocks agnostic requests and responses back to Fastify</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/forgot-password">forgot-password</a></span>
+					<span class="brick-desc">Forgot password management for @itrocks/user, including form, token generation, email sending, and secure reset</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/form-fetch">form-fetch</a></span>
+					<span class="brick-desc">AJAX fetch for HTML form submissions using form DOM data</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/framework">framework</a></span>
+					<span class="brick-desc">RAD framework for intuitive web application development, blending data and domain-driven design with modular architecture</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/home">home</a></span>
+					<span class="brick-desc">Default responsive it.rocks app container with navigation, user session, breadcrumb and notifications</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/lazy-loading">lazy-loading</a></span>
+					<span class="brick-desc">Integrates lazy loading for objects and collections in TypeScript classes</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/list">list</a></span>
+					<span class="brick-desc">Generic action-based object list navigation in HTML and JSON</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/menu">menu</a></span>
+					<span class="brick-desc">A flexible and accessible customizable main menu component with sidebar layout</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/modal">modal</a></span>
+					<span class="brick-desc">Lightweight modal with default styling and auto-close on form submit or link click</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/mysql">mysql</a></span>
+					<span class="brick-desc">Transforms model objects to and from MySQL database records</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/new">new</a></span>
+					<span class="brick-desc">Generic action-based new object form in HTML and JSON</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/notifications">notifications</a></span>
+					<span class="brick-desc">Visual management of a notification list: recent, hidden/visible, read/unread</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/output">output</a></span>
+					<span class="brick-desc">Generic action-based object output in HTML and JSON</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/parameter-name">parameter-name</a></span>
+					<span class="brick-desc">Runtime parameter name reflection from TypeScript declaration files</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/password">password</a></span>
+					<span class="brick-desc">@Password() decorator for secure formatting of password fields</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/plugin">plugin</a></span>
+					<span class="brick-desc">A structure that allows classes to be extended with new behaviors via plugin</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/prepare-module">prepare-module</a></span>
+					<span class="brick-desc">Prepare your front-end module with @itrocks dependencies for npm publishing</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/print">print</a></span>
+					<span class="brick-desc">Generic action-based PDF representation of object</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/property-type">property-type</a></span>
+					<span class="brick-desc">Runtime type reflection from TypeScript declaration files for properties</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/property-view">property-view</a></span>
+					<span class="brick-desc">Decorators for user-friendly identification of domain properties</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/real-viewport-height">real-viewport-height</a></span>
+					<span class="brick-desc">Maintains a CSS variable --real-vh with the actual visible viewport height</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/reflect">reflect</a></span>
+					<span class="brick-desc">Runtime introspection of TypeScript classes and their properties, including property type</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/rename">rename</a></span>
+					<span class="brick-desc">Switch the formatting of names stored in strings between different naming conventions</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/request-response">request-response</a></span>
+					<span class="brick-desc">Framework-agnostic module for crafting and handling HTTP requests and responses in TypeScript</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/required">required</a></span>
+					<span class="brick-desc">@Required decorator to enforce mandatory properties in data validation</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/route">route</a></span>
+					<span class="brick-desc">Domain-driven route manager with automatic generation, decorators, and static routes</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/save">save</a></span>
+					<span class="brick-desc">Persist object data, processing input from HTML or JSON sources</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/signup">signup</a></span>
+					<span class="brick-desc">Handles user sign-up for @itrocks/user, with account creation and secure onboarding flow</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/sorted-array">sorted-array</a></span>
+					<span class="brick-desc">Array subclasses that remain continuously sorted on insert() or push() calls, featuring optimized includes() and indexOf()</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/sql-functions">sql-functions</a></span>
+					<span class="brick-desc">Library of SQL functions mapping logical expressions to SQL syntax</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/storage">storage</a></span>
+					<span class="brick-desc">Transforms model objects to and from storage systems</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/store">store</a></span>
+					<span class="brick-desc">Marks domain classes for named storage, associates transformers to properties of these class types</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/summary">summary</a></span>
+					<span class="brick-desc">Generic action-based object summary in JSON</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/table">table</a></span>
+					<span class="brick-desc">A lightweight, modular HTML table offering near-spreadsheet features such as edit, freeze, lock, scroll, and more</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/template">template</a></span>
+					<span class="brick-desc">The W3C-valid, browser-previewable, concise, and fast HTML template engine that enables delimiter-less translations</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/transformer">transformer</a></span>
+					<span class="brick-desc">Transform property values dynamically, enabling data formatting for versatile use cases</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/translate">translate</a></span>
+					<span class="brick-desc">Manage dynamic string translations with support for variables and composite patterns</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/user">user</a></span>
+					<span class="brick-desc">Business entity representing a user with a login form, authentication, and logout actions</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/uses">uses</a></span>
+					<span class="brick-desc">Apply reusable mixins to your classes effortlessly with the @Uses decorator</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/ux-core">ux-core</a></span>
+					<span class="brick-desc">UI component providing a basic it.rocks app container with navigation, title bar, and logout support</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/webstorm">webstorm</a></span>
+					<span class="brick-desc">Facilitates developments on the it.rocks framework's source code within a single WebStorm project</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/xtarget">xtarget</a></span>
+					<span class="brick-desc">The simplest way to choose any element in your DOM as a target for your anchors and forms</span>
+				</li>
+			</ul>
 		</div>
 
 		<div class="more-bricks">
@@ -193,54 +507,12 @@
 			</p>
 			<ul>
 				<li>
-					<span class="brick-name">mysql</span>
-					<span class="brick-desc">Data-source adapter for MariaDB/MySQL databases.</span>
+					<span class="brick-name">default-actions</span>
+					<span class="brick-desc">Wires up shared actions across the business objects of your it.rocks-powered application</span>
 				</li>
 				<li>
-					<span class="brick-name">orm</span>
-					<span class="brick-desc">Object relations with automatic data retrieval—no more manual DB queries.</span>
-				</li>
-				<li>
-					<span class="brick-name">translate</span>
-					<span class="brick-desc">Multi-lingual translation support.</span>
-				</li>
-				<li>
-					<span class="brick-name">transform</span>
-					<span class="brick-desc">Data transformations between sources, objects, and formats.</span>
-				</li>
-				<li>
-					<span class="brick-name">action</span>
-					<span class="brick-desc">DDD controllers based on action-object pairs.</span>
-				</li>
-				<li>
-					<span class="brick-name">route</span>
-					<span class="brick-desc">Fundamental routing utilities.</span>
-				</li>
-				<li>
-					<span class="brick-name">auto-route</span>
-					<span class="brick-desc">Automatic routing to your domain objects (AutoRoute).</span>
-				</li>
-				<li>
-					<span class="brick-name">mixin</span>
-					<span class="brick-desc">Multiple inheritance implementation.</span>
-				</li>
-				<li>
-					<span class="brick-name">compose</span>
-					<span class="brick-desc">Enhance domain classes with mixins or inherited classes.</span>
-				</li>
-				<li>
-					<span class="brick-name">http-server</span>
-					<span class="brick-desc">Foundation for building web application servers.</span>
-				</li>
-				<li>
-					<span class="brick-name">fastify-server</span>
-					<span class="brick-desc">
-						<a href="https://www.npmjs.com/package/fastify" target="_blank">fastify</a>-based server for your apps.
-					</span>
-				</li>
-				<li>
-					<span class="brick-name">skin</span>
-					<span class="brick-desc">Front-end look and feel management.</span>
+					<span class="brick-name">template-insight</span>
+					<span class="brick-desc">Extends @itrocks/template: parses view-related decorators, uses reflection, translates</span>
 				</li>
 			</ul>
 		</div>
@@ -277,13 +549,19 @@
 					<span class="brick-name">Graphs</span>
 					<span class="brick-desc">Seamlessly integrate graphical visualizations with your data, right out of the box.</span>
 				</li>
+				<li>
+					<span class="brick-name">...</span>
+					<span class="brick-desc">and this is just the beginning.</span>
+				</li>
 			</ul>
 		</div>
 
 	</main>
 
 	<footer>
-		&copy; <a href="https://www.pillot.fr">Baptiste Pillot</a> - All rights reserved.
+		&copy; <a href="https://www.pillot.fr">Baptiste Pillot</a> 1989-2025
+		- Licensed under <a href="https://opensource.org/license/isc-license-txt">ISC</a>.
+		Grab it, tweak it, ship it, or bin it.
 	</footer>
 </body>
 </html>
