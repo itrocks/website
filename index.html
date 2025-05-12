@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<meta charset="utf-8">
+	<meta name="apple-mobile-web-app-title" content="it.rocks">
+	<meta name="description" content="it.rocks - Bricks for a RAD, domain-driven, intuitive business application framework.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #f9f9f9;
+			color: #333;
+			font-family: Arial, sans-serif;
+			margin: 10px;
+			padding: 0;
+			text-align: center;
+		}
+
+		header {
+			display: flex;
+			padding: 20px;
+		}
+
+		header img.logo {
+			height: 50px;
+		}
+
+		main h1 {
+			font-size: 2em;
+			font-weight: normal;
+			margin-bottom: 10px;
+		}
+
+		main p.subtitle {
+			font-style: italic;
+			font-size: 1.2em;
+			margin-bottom: 40px;
+		}
+
+		.links {
+			display: flex;
+			justify-content: center;
+			gap: 40px;
+			margin-bottom: 40px;
+		}
+
+		.links a {
+			align-items: center;
+			color: #333;
+			display: inline-flex;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.links a img {
+			height: 30px;
+			margin-right: 10px;
+		}
+
+		.disclaimer {
+			display: inline-block;
+			font-style: italic;
+			margin-bottom: 40px;
+		}
+
+		.disclaimer p {
+			text-align: left;
+		}
+
+		.dependency-graph {
+			border-top: 1px solid #ccc;
+			margin: 20px 20px 40px;
+			padding-top: 20px;
+		}
+
+		.dependency-graph h2 {
+			font-size: 1.4em;
+		}
+
+		.more-bricks {
+			border-top: 1px solid #ccc;
+			margin: 0 auto;
+			max-width: 780px;
+			padding-top: 20px;
+			text-align: left;
+		}
+
+		.more-bricks h2 {
+			font-size: 1.4em;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+
+		.more-bricks ul {
+			display: table;
+			padding: 0;
+		}
+
+		.more-bricks ul li {
+			display: table-row;
+		}
+
+		.brick-name {
+			display: table-cell;
+			font-weight: bold;
+			padding: 0 10px 10px;
+			white-space: nowrap;
+		}
+
+		.brick-desc {
+			color: #555;
+			display: table-cell;
+			padding: 0 10px 10px;
+		}
+
+		.info {
+			font-style: italic;
+		}
+
+		footer {
+			color: #666;
+			font-size: 0.9em;
+			padding: 20px;
+			text-align: center;
+		}
+	</style>
+	<title>it.rocks</title>
+</head>
+<body>
+
+	<header>
+		<img class="logo" src="it.rocks.svg" alt="it.rocks">
+	</header>
+
+	<main>
+		<p class="subtitle">Bricks for a RAD, data+domain-driven, intuitive web application dévelopment framework.</p>
+
+		<div class="disclaimer">
+			<p>
+				<strong>it.rocks</strong> is currently under active development, with exciting features and improvements being crafted.<br>
+				I'm working hard to bring you a usable first <strong>release</strong>.<br>
+				Feel free to check back soon when an initial, usable version will be available!
+			</p>
+			<p>
+				In the meantime, you can <strong>play</strong> around with the already deployed building blocks and use them in your projects.
+			</p>
+			<p>
+				Thank you for your patience and interest.
+			</p>
+		</div>
+		<div class="links">
+			<a href="https://sandbox.crafter.fr" target="sandbox">
+				<img src="sandbox.svg" alt="sandbox logo">
+				Play with the sandbox app
+			</a>
+		</div>
+		<div class="links">
+			<a href="https://www.npmjs.com/search?q=it.rocks" target="npmjs">
+				<img src="npm.svg" alt="npmjs logo">
+				View packages on npm
+			</a>
+			<a href="https://github.com/itrocks-ts" target="github">
+				<img src="github.svg" alt="GitHub logo">
+				View source on GitHub
+			</a>
+		</div>
+		<div class="links">
+			<a href="https://25.re/ditr" target="discord">
+				<img src="discord.svg" alt="Discord logo" style="height:20px;">
+				Join me and the community on Discord
+			</a>
+			<a href="https://x.com/ITRocksTS" target="x">
+				<img src="x.svg" alt="X logo" style="height:20px;">
+				Find the latest news on X.com
+			</a>
+		</div>
+
+		<div class="dependency-graph">
+			<h2>Visit deployed bricks</h2>
+			<a href="https://www.npmjs.com/search?q=it.rocks" target="npmjs">
+			<img alt="it.rocks bricks dependency graph" src="dependency-graph.svg" width="100%"/>
+		</a>
+		</div>
+
+		<div class="more-bricks">
+			<h2>More bricks to come</h2>
+			<p class="info">
+				These are currently drafted into the sandbox application, and will soon be deployed as individual packages:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name">mysql</span>
+					<span class="brick-desc">Data-source adapter for MariaDB/MySQL databases.</span>
+				</li>
+				<li>
+					<span class="brick-name">orm</span>
+					<span class="brick-desc">Object relations with automatic data retrieval—no more manual DB queries.</span>
+				</li>
+				<li>
+					<span class="brick-name">translate</span>
+					<span class="brick-desc">Multi-lingual translation support.</span>
+				</li>
+				<li>
+					<span class="brick-name">transform</span>
+					<span class="brick-desc">Data transformations between sources, objects, and formats.</span>
+				</li>
+				<li>
+					<span class="brick-name">action</span>
+					<span class="brick-desc">DDD controllers based on action-object pairs.</span>
+				</li>
+				<li>
+					<span class="brick-name">route</span>
+					<span class="brick-desc">Fundamental routing utilities.</span>
+				</li>
+				<li>
+					<span class="brick-name">auto-route</span>
+					<span class="brick-desc">Automatic routing to your domain objects (AutoRoute).</span>
+				</li>
+				<li>
+					<span class="brick-name">mixin</span>
+					<span class="brick-desc">Multiple inheritance implementation.</span>
+				</li>
+				<li>
+					<span class="brick-name">compose</span>
+					<span class="brick-desc">Enhance domain classes with mixins or inherited classes.</span>
+				</li>
+				<li>
+					<span class="brick-name">http-server</span>
+					<span class="brick-desc">Foundation for building web application servers.</span>
+				</li>
+				<li>
+					<span class="brick-name">fastify-server</span>
+					<span class="brick-desc">
+						<a href="https://www.npmjs.com/package/fastify" target="_blank">fastify</a>-based server for your apps.
+					</span>
+				</li>
+				<li>
+					<span class="brick-name">skin</span>
+					<span class="brick-desc">Front-end look and feel management.</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="more-bricks">
+			<h2>More bricks to code</h2>
+			<p class="info">
+				These are still waiting to be coded:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name">Maintainer</span>
+					<span class="brick-desc">A module for automatically aligning the database structure with the model classes.</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="more-bricks">
+			<h2>More projects for tomorrow</h2>
+			<p class="info">
+				The framework is just the starting point.<br>
+				I'll push the boundaries of rapidly building large-scale applications even further:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name">RAD</span>
+					<span class="brick-desc">Instantly generate data-driven applications with minimal, maintainable code.</span>
+				</li>
+				<li>
+					<span class="brick-name">Spreadsheet</span>
+					<span class="brick-desc">Effortlessly create spreadsheet-based applications backed by databases.</span>
+				</li>
+				<li>
+					<span class="brick-name">Graphs</span>
+					<span class="brick-desc">Seamlessly integrate graphical visualizations with your data, right out of the box.</span>
+				</li>
+			</ul>
+		</div>
+
+	</main>
+
+	<footer>
+		&copy; <a href="https://www.pillot.fr">Baptiste Pillot</a> - All rights reserved.
+	</footer>
+</body>
+</html>
