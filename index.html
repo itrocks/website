@@ -17,17 +17,28 @@
 			font-family: Arial, sans-serif;
 			margin: 10px;
 			padding: 0;
-			text-align: center;
 		}
 
 		header {
-			display: flex;
+			display: inline-block;
 			padding: 20px;
+			text-align: center;
 		}
 
 		header img.logo {
+			display: block;
 			height: 50px;
 		}
+
+		.jp {
+			font-family: "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+			font-size: 1.2em;
+			letter-spacing: .05em;
+		}
+
+		main {
+			text-align: center;
+    }
 
 		main h1 {
 			font-size: 2em;
@@ -134,6 +145,7 @@
 
 	<header>
 		<img class="logo" src="it.rocks.svg" alt="it.rocks">
+		<a href="https://www.logisan.fr" class="jp">IT最高</a>
 	</header>
 
 	<main>
@@ -182,7 +194,7 @@
 		<div class="more-bricks">
 			<h2>Visit deployed bricks</h2>
 			<p class="info">
-				Here is the initial version of the 78 foundational bricks of the framework:
+				Here is the initial version of the 80 foundational bricks of the framework:
 			</p>
 			<ul>
 				<li>
@@ -308,6 +320,10 @@
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/decorator">decorator</a></span>
 					<span class="brick-desc">A library that simplifies the declaration, persistence, and retrieval of decorator values</span>
+				</li>
+				<li>
+					<span class="brick-name">default-action-workflow</span>
+					<span class="brick-desc">Wires up shared actions across the business objects of your it.rocks-powered application</span>
 				</li>
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/delete">delete</a></span>
@@ -470,6 +486,9 @@
 					<span class="brick-desc">The W3C-valid, browser-previewable, concise, and fast HTML template engine that enables delimiter-less translations</span>
 				</li>
 				<li>
+					<span class="brick-name">template-insight</span>
+					<span class="brick-desc">Extends @itrocks/template: parses view-related decorators, uses reflection, translates</span>
+				</li>				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/transformer">transformer</a></span>
 					<span class="brick-desc">Transform property values dynamically, enabling data formatting for versatile use cases</span>
 				</li>
@@ -496,23 +515,6 @@
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/xtarget">xtarget</a></span>
 					<span class="brick-desc">The simplest way to choose any element in your DOM as a target for your anchors and forms</span>
-				</li>
-			</ul>
-		</div>
-
-		<div class="more-bricks">
-			<h2>More bricks to come</h2>
-			<p class="info">
-				These are currently drafted into the sandbox application, and will soon be deployed as individual packages:
-			</p>
-			<ul>
-				<li>
-					<span class="brick-name">default-actions</span>
-					<span class="brick-desc">Wires up shared actions across the business objects of your it.rocks-powered application</span>
-				</li>
-				<li>
-					<span class="brick-name">template-insight</span>
-					<span class="brick-desc">Extends @itrocks/template: parses view-related decorators, uses reflection, translates</span>
 				</li>
 			</ul>
 		</div>
@@ -561,7 +563,7 @@
 	<footer>
 		&copy; <a href="https://www.pillot.fr">Baptiste Pillot</a> 1987-2025
 		- Licensed under <a href="https://opensource.org/license/isc-license-txt">ISC</a>.
-		Grab it, tweak it, ship it, or bin it.
+		<i>Grab it, tweak it, ship it, or bin it.</i>
 	</footer>
 </body>
 </html>
