@@ -149,16 +149,16 @@
 	</header>
 
 	<main>
-		<p class="subtitle">Bricks for a RAD, data+domain-driven, intuitive web application dévelopment framework.</p>
+		<p class="subtitle">Bricks for a RAD, data- and domain-driven, intuitive web application development framework.</p>
 
-		<div class="disclaimer">
+		<div class="disclaimer" id="disclaimer">
 			<p>
 				<strong>it.rocks</strong> is currently under active development, with exciting features and improvements being crafted.<br>
 				I'm working hard to bring you a usable first <strong>release</strong>.<br>
-				Feel free to check back soon when an initial, usable version will be available!
+				Feel free to check back soon, as an initial usable version will be available!
 			</p>
 			<p>
-				In the meantime, you can <strong>play</strong> around with the already deployed building blocks and use them in your projects.
+				In the meantime, you can <strong>explore</strong> already deployed building blocks and use them in your projects.
 			</p>
 			<p>
 				Thank you for your patience and interest.
@@ -192,9 +192,9 @@
 		</div>
 
 		<div class="more-bricks">
-			<h2>Visit deployed bricks</h2>
+			<h2 id="deployed-bricks">Visit deployed bricks</h2>
 			<p class="info">
-				Here is the initial version of the 79 foundational bricks of the framework:
+				Here are 79 foundational bricks that form the initial version of the framework:
 			</p>
 			<ul>
 				<li>
@@ -323,7 +323,7 @@
 				</li>
 				<li>
 					<span class="brick-name">default-action-workflow</span>
-					<span class="brick-desc">Wires up shared actions across the business objects of your it.rocks-powered application</span>
+					<span class="brick-desc">Defines shared actions across domain objects of your app</span>
 				</li>
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/delete">delete</a></span>
@@ -483,7 +483,7 @@
 				</li>
 				<li>
 					<span class="brick-name">template-insight</span>
-					<span class="brick-desc">Extends @itrocks/template: parses view-related decorators, uses reflection, translates</span>
+					<span class="brick-desc">Extends @itrocks/template with decorator parsing, reflection, and translation features</span>
 				</li>
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/transformer">transformer</a></span>
@@ -517,9 +517,9 @@
 		</div>
 
 		<div class="more-bricks">
-			<h2>Additional generic business-oriented bricks</h2>
+			<h2 id="business-logic">Additional bricks for business logic</h2>
 			<p class="info">
-				These are non-foundational bricks which are frequently used into any business applications:
+				These are non-foundational bricks which are frequently used in business applications:
 			</p>
 			<ul>
 				<li>
@@ -542,23 +542,47 @@
 		</div>
 
 		<div class="more-bricks">
-			<h2>More bricks to code</h2>
+			<h2 id="upcoming-bricks">More bricks to code</h2>
 			<p class="info">
-				These are still waiting to be coded:
+				These are upcoming bricks still to be developed:
 			</p>
 			<ul>
 				<li>
-					<span class="brick-name">Maintainer</span>
-					<span class="brick-desc">A module for automatically aligning the database structure with the model classes.</span>
+					<span class="brick-name">class-to-table</span>
+					<span class="brick-desc">Converts a TypeScript class structure into a Table storage representation object.</span>
+				</li>
+				<li>
+					<span class="brick-name">mysql-maintainer</span>
+					<span class="brick-desc">Reactively maintains database structure by updating schema and retrying on MySQL errors.</span>
+				</li>
+				<li>
+					<span class="brick-name">mysql-to-table</span>
+					<span class="brick-desc">Extracts a MySQL table structure and converts it into a Table object.</span>
+				</li>
+				<li>
+					<span class="brick-name">table</span>
+					<span class="brick-desc">Abstract representation of a database table and its schema components.</span>
+				</li>
+				<li>
+					<span class="brick-name">table-diff</span>
+					<span class="brick-desc">Compares two Table objects and stores their structural differences.</span>
+				</li>
+				<li>
+					<span class="brick-name">table-diff-to-mysql</span>
+					<span class="brick-desc">Translates table differences into ALTER TABLE MySQL statements.</span>
+				</li>
+				<li>
+					<span class="brick-name">table-to-mysql</span>
+					<span class="brick-desc">Converts a Table object into MySQL statements for table creation.</span>
 				</li>
 			</ul>
 		</div>
 
 		<div class="more-bricks">
-			<h2>More projects for tomorrow</h2>
+			<h2 id="upcoming-projects">More projects for tomorrow</h2>
 			<p class="info">
 				The framework is just the starting point.<br>
-				I'll push the boundaries of rapidly building large-scale applications even further:
+				I'll push the boundaries of fast, large-scale application development even further:
 			</p>
 			<ul>
 				<li>
