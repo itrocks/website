@@ -549,7 +549,7 @@
 			<ul>
 				<li>
 					<span class="brick-name">class-to-table</span>
-					<span class="brick-desc">Converts a TypeScript class structure into a Table storage representation object.</span>
+					<span class="brick-desc">Converts a TypeScript class structure into a table schema.</span>
 				</li>
 				<li>
 					<span class="brick-name">mysql-maintainer</span>
@@ -557,23 +557,23 @@
 				</li>
 				<li>
 					<span class="brick-name">mysql-to-table</span>
-					<span class="brick-desc">Extracts a MySQL table structure and converts it into a Table object.</span>
-				</li>
-				<li>
-					<span class="brick-name">table</span>
-					<span class="brick-desc">Abstract representation of a database table and its schema components.</span>
+					<span class="brick-desc">Extracts a MySQL table structure and converts it into a table schema.</span>
 				</li>
 				<li>
 					<span class="brick-name">table-diff</span>
-					<span class="brick-desc">Compares two Table objects and stores their structural differences.</span>
+					<span class="brick-desc">Compares two table schemas and returns their differences as a structured object.</span>
 				</li>
 				<li>
 					<span class="brick-name">table-diff-to-mysql</span>
 					<span class="brick-desc">Translates table differences into ALTER TABLE MySQL statements.</span>
 				</li>
 				<li>
+					<span class="brick-name">table-schema</span>
+					<span class="brick-desc">Structured representation of an RDB table, including columns, indexes, constraints, and more.</span>
+				</li>
+				<li>
 					<span class="brick-name">table-to-mysql</span>
-					<span class="brick-desc">Converts a Table object into MySQL statements for table creation.</span>
+					<span class="brick-desc">Converts a table schema into MySQL statements for table creation.</span>
 				</li>
 			</ul>
 		</div>
