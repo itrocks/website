@@ -130,6 +130,7 @@
 
 		.info {
 			font-style: italic;
+			padding: 0 10px;
 		}
 
 		footer {
@@ -517,6 +518,31 @@
 		</div>
 
 		<div class="more-bricks">
+			<h2 id="optional-bricks">Visit additional deployed bricks</h2>
+			<p class="info">
+				These are non-foundational low-level bricks which improve your app productivity:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name">class-to-table</span>
+					<span class="brick-desc">Converts a TypeScript class structure into a table schema.</span>
+				</li>
+				<li>
+					<span class="brick-name">mysql-to-table</span>
+					<span class="brick-desc">Extracts a MySQL table structure and converts it into a table schema.</span>
+				</li>
+				<li>
+					<span class="brick-name">table-schema</span>
+					<span class="brick-desc">Structured representation of an RDB table, including columns, indexes, constraints, and more.</span>
+				</li>
+				<li>
+					<span class="brick-name">table-to-mysql</span>
+					<span class="brick-desc">Converts a table schema into MySQL statements for table creation.</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="more-bricks">
 			<h2 id="business-logic">Additional bricks for business logic</h2>
 			<p class="info">
 				These are non-foundational bricks which are frequently used in business applications:
@@ -548,16 +574,8 @@
 			</p>
 			<ul>
 				<li>
-					<span class="brick-name">class-to-table</span>
-					<span class="brick-desc">Converts a TypeScript class structure into a table schema.</span>
-				</li>
-				<li>
 					<span class="brick-name">mysql-maintainer</span>
 					<span class="brick-desc">Reactively maintains database structure by updating schema and retrying on MySQL errors.</span>
-				</li>
-				<li>
-					<span class="brick-name">mysql-to-table</span>
-					<span class="brick-desc">Extracts a MySQL table structure and converts it into a table schema.</span>
 				</li>
 				<li>
 					<span class="brick-name">table-diff</span>
@@ -566,14 +584,6 @@
 				<li>
 					<span class="brick-name">table-diff-to-mysql</span>
 					<span class="brick-desc">Translates table differences into ALTER TABLE MySQL statements.</span>
-				</li>
-				<li>
-					<span class="brick-name">table-schema</span>
-					<span class="brick-desc">Structured representation of an RDB table, including columns, indexes, constraints, and more.</span>
-				</li>
-				<li>
-					<span class="brick-name">table-to-mysql</span>
-					<span class="brick-desc">Converts a table schema into MySQL statements for table creation.</span>
 				</li>
 			</ul>
 		</div>
