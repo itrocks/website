@@ -82,12 +82,6 @@
 			text-align: left;
 		}
 
-		.dependency-graph {
-			border-top: 1px solid #ccc;
-			margin: 20px 20px 40px;
-			padding-top: 20px;
-		}
-
 		.dependency-graph h2 {
 			font-size: 1.4em;
 		}
@@ -195,7 +189,7 @@
 		<div class="more-bricks">
 			<h2 id="deployed-bricks">Visit deployed bricks</h2>
 			<p class="info">
-				Here are 79 foundational bricks that form the initial version of the framework:
+				Here are 78 foundational bricks that form the initial version of the framework:
 			</p>
 			<ul>
 				<li>
@@ -323,7 +317,7 @@
 					<span class="brick-desc">A library that simplifies the declaration, persistence, and retrieval of decorator values</span>
 				</li>
 				<li>
-					<span class="brick-name">default-action-workflow</span>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/default-action-workflow">default-action-workflow</a></span>
 					<span class="brick-desc">Defines shared actions across domain objects of your app</span>
 				</li>
 				<li>
@@ -483,7 +477,7 @@
 					<span class="brick-desc">The W3C-valid, browser-previewable, concise, and fast HTML template engine that enables delimiter-less translations</span>
 				</li>
 				<li>
-					<span class="brick-name">template-insight</span>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/template-insight">template-insight</a></span>
 					<span class="brick-desc">Extends @itrocks/template with decorator parsing, reflection, and translation features</span>
 				</li>
 				<li>
@@ -507,37 +501,8 @@
 					<span class="brick-desc">UI component providing a basic it.rocks app container with navigation, title bar, and logout support</span>
 				</li>
 				<li>
-					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/webstorm">webstorm</a></span>
-					<span class="brick-desc">Facilitates developments on the it.rocks framework's source code within a single WebStorm project</span>
-				</li>
-				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/xtarget">xtarget</a></span>
 					<span class="brick-desc">The simplest way to choose any element in your DOM as a target for your anchors and forms</span>
-				</li>
-			</ul>
-		</div>
-
-		<div class="more-bricks">
-			<h2 id="optional-bricks">Visit additional deployed bricks</h2>
-			<p class="info">
-				These are non-foundational low-level bricks which improve your app productivity:
-			</p>
-			<ul>
-				<li>
-					<span class="brick-name">class-to-table</span>
-					<span class="brick-desc">Converts a TypeScript class structure into a table schema</span>
-				</li>
-				<li>
-					<span class="brick-name">mysql-to-table</span>
-					<span class="brick-desc">Extracts a MySQL table structure and converts it into a table schema</span>
-				</li>
-				<li>
-					<span class="brick-name">table-schema</span>
-					<span class="brick-desc">Structured representation of an RDB table, including columns, indexes, constraints</span>
-				</li>
-				<li>
-					<span class="brick-name">table-to-mysql</span>
-					<span class="brick-desc">Converts a table schema into MySQL statements for table creation</span>
 				</li>
 			</ul>
 		</div>
@@ -553,16 +518,53 @@
 					<span class="brick-desc">Reusable business components to enrich domain entities with common attributes like active, name, and more</span>
 				</li>
 				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/length">length</a></span>
+					<span class="brick-desc">Decorators @Length, @minlength, @MaxLength to enforce fixed or flexible string length limits on class properties</span>
+				</li>
+				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/precision">precision</a></span>
 					<span class="brick-desc">@Precision decorator to define fixed or adaptive decimal precision for numeric values</span>
 				</li>
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/range">range</a></span>
-					<span class="brick-desc">A property decorator to specify min–max value ranges, date, numeric or string-based</span>
+					<span class="brick-desc">A property decorator to specify min-max value ranges, date, numeric or string-based</span>
 				</li>
 				<li>
 					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/unit">unit</a></span>
 					<span class="brick-desc">Associates a custom unit with a class property</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/value">value</a></span>
+					<span class="brick-desc">Limit property values with @MinValue, @MaxValue, @Values, @Signed</span>
+				</li>
+			</ul>
+		</div>
+
+		<div class="more-bricks">
+			<h2 id="optional-bricks">Visit additional deployed bricks</h2>
+			<p class="info">
+				These are non-foundational low-level bricks which improve your app productivity:
+			</p>
+			<ul>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/class-to-table">class-to-table</a></span>
+					<span class="brick-desc">Converts a TypeScript class structure into a table schema</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/former-name">former-name</a></span>
+					<span class="brick-desc">Stores previous property names to help manage schema changes, legacy data access, and so on</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/mysql-to-table">mysql-to-table</a></span>
+					<span class="brick-desc">Extracts a MySQL table structure and converts it into a table schema</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/table-schema">table-schema</a></span>
+					<span class="brick-desc">Structured representation of an RDB table, including columns, indexes, constraints</span>
+				</li>
+				<li>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/webstorm">webstorm</a></span>
+					<span class="brick-desc">Facilitates developments on the it.rocks framework's source code within a single WebStorm project</span>
 				</li>
 			</ul>
 		</div>
@@ -574,7 +576,7 @@
 			</p>
 			<ul>
 				<li>
-					<span class="brick-name">mysql-maintainer</span>
+					<span class="brick-name"><a href="https://www.npmjs.com/package/@itrocks/mysql-maintainer">mysql-maintainer</a></span>
 					<span class="brick-desc">Reactively maintains database structure by updating schema and retrying on MySQL errors</span>
 				</li>
 				<li>
@@ -584,6 +586,10 @@
 				<li>
 					<span class="brick-name">table-diff-to-mysql</span>
 					<span class="brick-desc">Translates table differences into ALTER TABLE MySQL statements</span>
+				</li>
+				<li>
+					<span class="brick-name">table-to-mysql</span>
+					<span class="brick-desc">Converts a table schema into MySQL statements for table creation</span>
 				</li>
 			</ul>
 		</div>
